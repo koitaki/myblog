@@ -1,0 +1,68 @@
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <meta name="description" content="Blog">
+  <meta name="author" content="Blog">
+  <link rel="stylesheet" href="{%  static 'css/main.css' %}">
+  <link rel="stylesheet" href="{%  static 'css/flex.css' %}">
+  <link rel="stylesheet" href="{%  static 'font-awesome-4.5.0/css/font-awesome.min.css' %}">
+
+</head>
+
+<body>
+<header class="primary-header group">
+
+  <h1 class="logo">
+    <a href="/blog">Chris<br>Adams</a>
+  </h1>
+
+  <h3 class="tagline">Finance & Banking Generalist</h3>
+
+  <nav class="nav primary-nav">
+    <ul>
+      <li><a href="/blog">Home</a></li><!--
+    --><li><a href="/blog/dummy">VBA</a></li><!--
+    --><li><a href="/blog/dummy">SAS</a></li><!--
+    --><li><a href="/blog/dummy">Python</a></li><!--
+    --><li><a href="/blog/dummy">Django</a></li><!--
+    --><li><a href="/blog/dummy">SQL</a></li><!--
+    --><li><a href="/blog/dummy">About</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<section class="container row">
+
+{% block content %}
+{% endblock %}
+
+</section>
+
+<footer class="primary-footer group">
+
+  <small><a href="/blog"><i class="fa fa-copyright"></i> Chris Adams 2016</a></small>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="/blog">Home</a></li><!--
+    --><li><a href="/blog/dummy">VBA</a></li><!--
+    --><li><a href="/blog/dummy">SAS</a></li><!--
+    --><li><a href="/blog/dummy">Python</a></li><!--
+    --><li><a href="/blog/dummy">Django</a></li><!--
+    --><li><a href="/blog/dummy">SQL</a></li><!--
+    --><li><a href="/blog/dummy">About</a></li>
+    </ul>
+  </nav>
+
+</footer>
+
+
+</body>
+</html>

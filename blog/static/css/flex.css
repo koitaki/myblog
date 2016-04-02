@@ -1,0 +1,35 @@
+.flex {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-justify-content: flex-end;
+  -webkit-align-items: flex-start;
+}
+
+.flex > *{
+}
+
+header {
+background: rgba(200,200,200,1);
+}
+
+header, footer {
+}
+
+header, footer, article, aside {
+}
+
+article {
+background: rgba(200,200,200,.8);
+}
+
+.middle {
+}
+
+aside {
+background: rgba(200,200,200,0.6);
+}
+
+footer {
+background: rgba(200,200,200,0.4);
+}
+
